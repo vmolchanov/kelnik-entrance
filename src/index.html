@@ -9,6 +9,476 @@
     <link rel="stylesheet" href="css/bundle.min.css">
 </head>
 <body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <img src="img/logo.png" alt="Логотип">
+        </div>
+
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a href="#">Объекты</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Компания</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Как купить</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Агентам</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Регионам</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Акции</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="contacts">
+            <p class="contacts__phone">8 888 88 88 98</p>
+            <p class="contacts__text">Звони скорее!</p>
+        </div>
+    </header>
+
+    <main>
+        <b>Найдено 666 квартир</b>
+
+        <div class="catalog">
+            <div class="catalog__sort">
+
+            </div>
+
+            <ul class="catalog__apartment-list">
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Студия №44</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                без отделки
+                            </li>
+                            <li class="apartment-item__property">
+                                28 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                12/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">1 900 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Однокомнатная №666</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                базовая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                66 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                6/6 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">1 666 666 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--free">Свободно</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Двухкомнатная №567</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                65.6 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                7/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">5 900 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--sold-out">Продано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Трехкомнатная №45</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                без отделки
+                            </li>
+                            <li class="apartment-item__property">
+                                56 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                1/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">12 900 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels">
+                            <li class="apartment-item__labels">-17%</li>
+                            <li class="apartment-item__labels">Шок цена!</li>
+                        </ul>
+
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Студия №25</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                18 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                12/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">1 900 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels">
+                            <li class="apartment-item__label">-6%</li>
+                        </ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Четырехкомнатная №259</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                98 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                14/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">23 900 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Однокомнатная №56</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                без отделки
+                            </li>
+                            <li class="apartment-item__property">
+                                36 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                3/6 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">5 666 666 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--free">Свободно</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Трехкомнтаная №46</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                86 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                1/6 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">5 696 664 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--free">Свободно</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Однокомнатная №2</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                18 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                3/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">1 200 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Студия №12</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                38 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                6/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">1 500 500 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Однокомнатная №8</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                черновая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                48 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                3/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">6 200 000 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+                <li class="catalog__apartment-item">
+                    <article class="apartment-item">
+                        <ul class="apartment-item__labels"></ul>
+                        
+                        <div class="apartment-item__favourite">
+                            <button>
+                                <img src="img/star.png" alt="В избранном">
+                            </button>
+                        </div>
+                        
+                        <div class="apartment-item__image">
+                            <img src="http://placehold.it/210x200" alt="">
+                        </div>
+
+                        <h2 class="apartment-item__title">Двухкомнатная №23</h2>
+
+                        <ul class="apartment-item__properties">
+                            <li class="apartment-item__property">
+                                базовая отделка
+                            </li>
+                            <li class="apartment-item__property">
+                                48 м<sup>2</sup> площадь
+                            </li>
+                            <li class="apartment-item__property">
+                                3/14 этаж
+                            </li>
+                        </ul>
+
+                        <p class="apartment-item__price">5 255 006 руб.</p>
+
+                        <strong class="apartment-item__status apartment-item__status--booked">Забронировано</strong>
+                    </article>
+                </li>
+            </ul>
+
+            <button class="catalog__more button">Показать еще 20</button>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__text">
+            <b>Успей купить!</b>
+            <p>Подпишись и успей словить все акции</p>
+        </div>
+        <form action="#" class="main-footer__subscribtion subscribtion-form">
+            <div class="subscribtion-form__column">
+                <input class="subscribtion-form__email" type="email" name="email">
+                <input id="news-subscription" class="subscribtion-form__checkbox" type="checkbox" name="news-subscription">
+                <label for="news-subscription" class="subscribtion-form__label">подписаться на новости</label>
+            </div>
+            <div class="subscribtion-form__column">
+                <button type="submit" class="subscribtion-form__submit-button">Подписаться</button>
+            </div>
+        </form>
+    </footer>
+
     <script src="js/bundle.min.js"></script>
 </body>
 </html>
