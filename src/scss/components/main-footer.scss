@@ -41,4 +41,46 @@
 
         vertical-align: top;
     }
+
+    @media screen and (max-width: 1279px) {
+        @include container($small-desktop-width);
+
+        &__text {
+            margin-right: 118px;
+
+            b {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        @include container($tablet-width);
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__text {
+            display: block;
+            margin-right: 0;
+        }
+
+        &__subscribtion {
+            display: block;
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 439px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

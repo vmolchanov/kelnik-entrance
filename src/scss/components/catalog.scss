@@ -2,6 +2,7 @@
     &__found {
         display: block;
         padding-left: 110px;
+        padding-right: 110px;
         padding-top: 70px;
         padding-bottom: 70px;
 
@@ -57,5 +58,82 @@
         margin-top: 50px;
 
         text-align: center;
+    }
+
+    @media screen and (max-width: 1279px) {
+        &__found {
+            padding-left: 130px;
+
+            font-size: 42px;
+        }
+
+        &__inner {
+            padding-left: 130px;
+            padding-right: 130px;
+        }
+
+        &__apartment-item {
+            &:nth-child(odd) {
+                margin-right: 124px;
+            }
+
+            &:nth-child(even) {
+                margin-right: auto;
+            }
+
+            &:not(:nth-child(1)):not(:nth-child(2)) {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        &__found {
+            padding-left: 40px;
+            padding-right: 40px;
+
+            text-align: center;
+        }
+
+        &__inner {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        &__apartment-item {
+            &:nth-child(odd) {
+                margin-right: 48px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__found {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            font-size: 28px;
+        }
+
+        &__apartment-list {
+            text-align: center;
+        }
+
+        &__apartment-item {
+            &:nth-child(odd) {
+                margin-right: 0;
+            }
+
+            &:not(:nth-child(1)) {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 439px) {
+        &__inner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 }

@@ -182,4 +182,53 @@
     &__status--sold-out {
         background-color: #a1a1a1;
     }
+
+    @media screen and (max-width: 767px) {
+        &__labels {
+            text-align: left;
+        }
+
+        &__properties {
+            text-align: left;
+        }
+
+        &__price {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 439px) {
+        width: 280px;
+        height: 520px;
+
+        &__title {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            font-size: 22px;
+        }
+
+        &__price {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            font-size: 22px;
+        }
+
+        &__properties {
+            width: 238px;
+        }
+
+        &__property--finish {
+            width: 97px;
+        }
+    
+        &__property--square {
+            width: 83px;
+        }
+    
+        &__property--floor {
+            width: 55px;
+        }
+    }
 }

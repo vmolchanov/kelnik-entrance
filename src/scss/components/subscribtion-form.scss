@@ -31,6 +31,10 @@
         left: 0;
         top: 3px;
 
+        display: block;
+        width: 18px;
+        height: 18px;
+
         content: url('../../img/checkbox.png');
     }
 
@@ -38,6 +42,10 @@
         position: absolute;
         left: 0;
         top: 3px;
+
+        display: block;
+        width: 18px;
+        height: 18px;
 
         content: url('../../img/checkbox-checked.png');
     }
@@ -71,5 +79,47 @@
         border-radius: 2px;
         color: #ffffff;
         background-color: #a7a37e;
+    }
+
+    @media screen and (max-width: 1279px) {
+        &__email {
+            width: 300px;
+
+            font-size: 16px;
+        }
+
+        &__label {
+            font-size: 14px;
+        }
+
+        &__checkbox + &__label::before {
+            top: 2px;
+        }
+    
+        &__checkbox:checked + &__label::before {
+            top: 2px;
+        }
+
+        &__submit-button {
+            width: 190px;
+
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__column {
+            display: block;
+        }
+
+        &__submit-button {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+        &__email {
+            width: 100%;
+            max-width: 400px;
+        }
     }
 }

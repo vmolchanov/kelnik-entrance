@@ -1,10 +1,13 @@
 .main-header {
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
 
     font-size: 0;
+
+    background-color: #002f2f;
 
     & > * {
         display: inline-block;
@@ -26,5 +29,36 @@
         width: 20%;
     }
 
-    background-color: #002f2f;
+    @media screen and (max-width: 1023px) {
+        position: relative;
+
+        padding-left: 40px;
+        padding-right: 40px;
+
+        text-align: justify;
+
+        &::after {
+            display: inline-block;
+            width: 100%;
+
+            content: '';
+        }
+
+        &__logo {
+            display: none;
+        }
+
+        &__main-menu {
+            width: auto;
+        }
+
+        &__contacts {
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 439px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
