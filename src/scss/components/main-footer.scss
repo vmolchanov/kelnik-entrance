@@ -1,0 +1,42 @@
+.main-footer {
+    @include container($desktop-width);
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    font-size: 0;
+
+    background-color: #046380;
+
+    &__text {
+        display: inline-block;
+        margin-right: 195px;
+
+        vertical-align: top;
+
+        b {
+            font-size: 34px;
+            font-weight: 600;
+
+            color: #ffffff;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            color: #ffffff;
+        }
+    }
+
+    &__subscribtion {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+}

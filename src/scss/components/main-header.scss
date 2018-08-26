@@ -1,0 +1,30 @@
+.main-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 0;
+
+    & > * {
+        display: inline-block;
+
+        vertical-align: middle;
+    }
+
+    &__logo {
+        width: 5%;
+
+        text-align: center;
+    }
+
+    &__main-menu {
+        width: 75%;
+    }
+
+    &__contacts {
+        width: 20%;
+    }
+
+    background-color: #002f2f;
+}

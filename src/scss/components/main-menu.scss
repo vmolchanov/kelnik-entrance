@@ -1,0 +1,29 @@
+.main-menu {
+    padding-left: 2%;
+    padding-right: 2%;
+
+    &__list {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        a {
+            font-size: 24px;
+            font-weight: 400;
+
+            color: #fefefe;
+        }
+
+        &:not(:last-child) {
+            margin-right: 2%;
+        }
+    }
+}

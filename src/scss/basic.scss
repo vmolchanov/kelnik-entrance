@@ -9,6 +9,16 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: $open-sans;
+
+    background-color: #faf9ef;
+}
+
+main {
+    @include container($desktop-width);
+}
+
 a {
     text-decoration: none;
 }

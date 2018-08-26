@@ -1,0 +1,185 @@
+.apartment-item {
+    position: relative;
+
+    width: 320px;
+    height: 520px;
+
+    &--booked {
+        border: 1px solid #a7a37e;
+    }
+
+    &--free {
+        border: 1px solid #002f2f;
+    }
+
+    &--sold-out {
+        border: 1px solid #a1a1a1;
+    }
+
+    &__labels {
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        right: 20px;
+
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        list-style: none;
+    }
+
+    &__label {
+        display: inline-block;
+        margin-right: 20px;
+        padding-left: 4px;
+        padding-right: 4px;
+
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        border-radius: 2px;
+        color: #ffffff;
+        background-color: #ff4444;
+    }
+
+    &__favourite {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        button {
+            padding-left: 0;
+            padding-right: 0;
+
+            background: none;
+            border: none;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+    }
+
+    &__title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 280px;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+
+        color: #002f2f;
+    }
+
+    &__properties {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 110px;
+
+        width: 198px;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 0;
+
+        border-left: 3px solid #046380;
+
+        list-style: none;
+    }
+
+    &__property {
+        display: inline-block;
+        padding-left: 5px;
+
+        font-size: 18px;
+        font-weight: 400;
+
+        color: #313639;
+        vertical-align: top;
+
+        span {
+            font-size: 13px;
+        }
+    }
+    
+    &__property--finish {
+        width: 83px;
+
+        font-size: 16px;
+
+        color: #046380;
+    }
+
+    &__property--square {
+        width: 69px;
+    }
+
+    &__property--floor {
+        width: 43px;
+    }
+
+    &__price {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        right: 0;
+
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 24px;
+        font-weight: 600;
+        text-align: left;
+
+        color: #313639;
+    }
+
+    &__status {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+
+        color: #ffffff;
+    }
+
+    &__status--booked {
+        background-color: #a7a37e;
+    }
+
+    &__status--free {
+        background-color: #002f2f;
+    }
+
+    &__status--sold-out {
+        background-color: #a1a1a1;
+    }
+}

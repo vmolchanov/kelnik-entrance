@@ -1,5 +1,16 @@
 @import '../libs/normalize.scss';
 
 @import 'variables.scss';
-@import 'basic.scss';
 @import 'mixins.scss';
+@import 'basic.scss';
+
+@import 'components/apartment-item.scss';
+@import 'components/button.scss';
+@import 'components/catalog.scss';
+@import 'components/clearfix.scss';
+@import 'components/contacts.scss';
+@import 'components/main-footer.scss';
+@import 'components/main-header.scss';
+@import 'components/main-menu.scss';
+@import 'components/subscribtion-form.scss';
+@import 'components/visually-hidden.scss';

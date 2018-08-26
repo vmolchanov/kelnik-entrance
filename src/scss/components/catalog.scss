@@ -1,0 +1,61 @@
+.catalog {
+    &__found {
+        display: block;
+        padding-left: 110px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        font-size: 48px;
+        font-weight: 700;
+
+        color: #002f2f;
+    }
+
+    &__inner {
+        padding-left: 105px;
+        padding-right: 105px;
+        padding-bottom: 75px;
+
+        background-color: #ffffff;
+    }
+
+    &__sort {
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+        font-size: 14px;
+        font-weight: 400;
+
+        color: #002f2f;
+    }
+
+    &__apartment-list {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 0;
+
+        list-style: none;
+    }
+
+    &__apartment-item {
+        display: inline-block;
+
+        vertical-align: top;
+
+        &:not(:nth-child(3n)) {
+            margin-right: 55px;
+        }
+
+        &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+            margin-top: 50px;
+        }
+    }
+
+    &__more {
+        margin-top: 50px;
+
+        text-align: center;
+    }
+}
