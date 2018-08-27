@@ -12,6 +12,14 @@
     color: #ffffff;
     background-color: #046380;
 
+    &:hover {
+        background-color: lighten(#046380, 5%);
+    }
+
+    &:active {
+        background-color: darken(#046380, 5%);
+    }
+
     @media screen and (max-width: 767px) {
         width: 340px;
         padding-top: 20px;

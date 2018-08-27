@@ -26,6 +26,14 @@
             color: #fefefe;
         }
 
+        a:hover {
+            color: darken(#fefefe, 10%);
+        }
+
+        a:active {
+            color: darken(#fefefe, 25%);
+        }
+
         &:not(:last-child) {
             margin-right: 2%;
         }

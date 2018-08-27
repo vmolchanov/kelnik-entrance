@@ -38,6 +38,10 @@
         content: url('../../img/checkbox.png');
     }
 
+    &__checkbox:focus + &__label::before {
+        outline: 2px solid #fc0;
+    }
+
     &__checkbox:checked + &__label::before {
         position: absolute;
         left: 0;
@@ -63,6 +67,10 @@
         color: #ffffff;
 
         user-select: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__submit-button {
@@ -79,6 +87,14 @@
         border-radius: 2px;
         color: #ffffff;
         background-color: #a7a37e;
+
+        &:hover {
+            background-color: darken(#a7a37e, 5%);
+        }
+
+        &:active {
+            background-color: darken(#a7a37e, 10%);
+        }
     }
 
     @media screen and (max-width: 1279px) {

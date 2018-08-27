@@ -15,6 +15,10 @@ body {
     background-color: #faf9ef;
 }
 
+*:focus {
+    outline: 2px solid #fc0;
+}
+
 main {
     @include container($desktop-width);
 
