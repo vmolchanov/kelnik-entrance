@@ -8,6 +8,7 @@ const uglify = require('gulp-uglify-es').default;
 const browserSync = require("browser-sync").create();
 const del = require('del');
 const rollup = require('gulp-rollup');
+const babel = require('gulp-babel');
 
 const watchTasks = [
     {
@@ -50,6 +51,9 @@ gulp.task('scripts', () => {
         .pipe(rollup({
             input: './src/js/index.js',
             format: 'es'
+        }))
+        .pipe(babel({
+            presets: ['env']
         }))
         .pipe(uglify())
         .pipe(rename('bundle.min.js'))
