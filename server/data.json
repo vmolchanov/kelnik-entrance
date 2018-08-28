@@ -1,0 +1,124 @@
+{
+    "items":[
+        {
+            "image": "img/apart-images/photo-1.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-2.png",
+            "title": "Студия №51",
+            "finish": "черновая отделка",
+            "square": "31",
+            "floor": "6/9",
+            "price": 1670000,
+            "status": "Продано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-3.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-4.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-5.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-6.png",
+            "title": "Трехкомнатная №8",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 3
+        },
+        {
+            "image": "img/apart-images/photo-7.png",
+            "title": "Двухкомнатная №6",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Свободно",
+            "roomsCount": 2
+        },
+        {
+            "image": "img/apart-images/photo-8.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Свободно",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-9.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-10.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Свободно",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-11.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Забронировано",
+            "roomsCount": 1
+        },
+        {
+            "image": "img/apart-images/photo-12.png",
+            "title": "Студия №44",
+            "finish": "без отделки",
+            "square": "28",
+            "floor": "1/14",
+            "price": 1450000,
+            "status": "Продано",
+            "roomsCount": 1
+        }
+    ]
+}
