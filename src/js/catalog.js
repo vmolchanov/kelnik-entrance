@@ -4,10 +4,12 @@ export default class Catalog {
         this.priceSortButton = catalog.querySelector('#price-sort');
         this.roomsSortButton = catalog.querySelector('#rooms-sort');
         this.catalogList = catalog.querySelector('.catalog__apartment-list');
+        this.moreButton = catalog.querySelector('.catalog__more .button');
 
         this.init = this.init.bind(this);
         this.toggleState = this.toggleState.bind(this);
         this.sort = this.sort.bind(this);
+        this.render = this.render.bind(this);
     }
 
     init() {
@@ -51,6 +53,20 @@ export default class Catalog {
                 direction: e.target.classList.contains('catalog__sort-type--inc') ? 'inc' : 'dec'
             };
             this.sort(sortConfig);
+        });
+
+        this.moreButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            const xhr = new XMLHttpRequest;
+            xhr.open('GET', 'http://localhost:3010/apartments/20');
+            xhr.addEventListener('readystatechange', (e) => {
+                if (xhr.readyState === xhr.DONE) {
+                    const items = JSON.parse(xhr.response).items;
+                    
+                    this.render(items);
+                }
+            });
+            xhr.send(null);
         });
     }
 
@@ -111,6 +127,11 @@ export default class Catalog {
             item.price = str;
         });
 
+        this.catalogList.innerHTML = '';
+        this.render(catalogItems);
+    }
+
+    render(catalogItems) {
         const fragment = document.createDocumentFragment();
 
         const template = document.querySelector('#apartment-item-template').innerHTML;
@@ -121,10 +142,23 @@ export default class Catalog {
             const li = document.createElement('li');
             li.classList.add('catalog__apartment-item');
             li.innerHTML = rendered;
+            switch (item.status) {
+                case "Забронировано": 
+                    li.querySelector('.apartment-item').classList.add('apartment-item--booked');
+                    li.querySelector('.apartment-item__status').classList.add('apartment-item__status--booked');
+                    break;
+                case "Свободно":
+                    li.querySelector('.apartment-item').classList.add('apartment-item--free');
+                    li.querySelector('.apartment-item__status').classList.add('apartment-item__status--free');
+                    break;
+                case "Продано":
+                    li.querySelector('.apartment-item').classList.add('apartment-item--sold-out');
+                    li.querySelector('.apartment-item__status').classList.add('apartment-item__status--sold-out');
+                    break;
+            }
             fragment.appendChild(li);
         }));
 
-        this.catalogList.innerHTML = '';
         this.catalogList.appendChild(fragment);
     }
 }

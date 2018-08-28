@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <button class="to-top-button visually-hidden">
+    <button class="to-top-button visually-hidden" aria-label="Подняться наверх страницы">
         <img src="img/up.png" alt="Наверх">
     </button>
     <header class="main-header">
@@ -24,29 +24,29 @@
         </div>
 
         <nav class="main-header__main-menu main-menu">
-            <button class="main-menu__hamburger">
-                <img src="img/hamburger.png" alt="Показать / скрыть меню">
+            <button class="main-menu__hamburger" aria-controls="main-menu-list" aria-label="Показать или скрыть меню">
+                <img src="img/hamburger.png" alt="Показать или скрыть меню">
             </button>
-            <ul class="main-menu__list">
-                <li class="main-menu__item">
+            <ul id="main-menu-list" class="main-menu__list" role="menubar">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Объекты</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Компания</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Как купить</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Агентам</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Регионам</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Акции</a>
                 </li>
-                <li class="main-menu__item">
+                <li class="main-menu__item" role="menuitem">
                     <a href="#">Контакты</a>
                 </li>
             </ul>
@@ -75,7 +75,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star.png" alt="В избранном">
                                 </button>
                             </div>
@@ -108,7 +108,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -141,7 +141,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star.png" alt="В избранном">
                                 </button>
                             </div>
@@ -174,7 +174,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -210,7 +210,7 @@
                             </ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star.png" alt="В избранном">
                                 </button>
                             </div>
@@ -245,7 +245,7 @@
                             </ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -278,7 +278,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -311,7 +311,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -344,7 +344,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -377,7 +377,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -410,7 +410,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -443,7 +443,7 @@
                             <ul class="apartment-item__labels"></ul>
 
                             <div class="apartment-item__favourite">
-                                <button>
+                                <button aria-label="Добавить или удалить из избранного">
                                     <img src="img/star-empty.png" alt="Не в избранном">
                                 </button>
                             </div>
@@ -487,9 +487,9 @@
         </div>
         <form action="#" class="main-footer__subscribtion subscribtion-form">
             <div class="subscribtion-form__column">
-                <input class="subscribtion-form__email" type="email" name="email" placeholder="E-mail">
-                <input id="news-subscription" class="subscribtion-form__checkbox visually-hidden" type="checkbox" name="news-subscription">
-                <label for="news-subscription" class="subscribtion-form__label">подписаться на новости</label>
+                <input class="subscribtion-form__email" type="email" name="email" placeholder="E-mail" aria-required="true" required>
+                <input id="news-subscription" class="subscribtion-form__checkbox visually-hidden" type="checkbox" name="news-subscription" aria-labelledby="label-mail">
+                <label id="label-mail" for="news-subscription" class="subscribtion-form__label">подписаться на новости</label>
             </div>
             <div class="subscribtion-form__column">
                 <button type="submit" class="subscribtion-form__submit-button">Подписаться</button>
@@ -498,11 +498,11 @@
     </footer>
 
     <template id="apartment-item-template" style="display: none;">
-        <article class="apartment-item apartment-item--booked" data-rooms-count="{{roomsCount}}">
+        <article class="apartment-item" data-rooms-count="{{roomsCount}}">
             <ul class="apartment-item__labels"></ul>
 
             <div class="apartment-item__favourite">
-                <button>
+                <button aria-label="Добавить или удалить из избранного">
                     <img src="img/star.png" alt="В избранном">
                 </button>
             </div>
@@ -527,7 +527,7 @@
 
             <p class="apartment-item__price">{{price}} руб.</p>
 
-            <strong class="apartment-item__status apartment-item__status--booked">{{status}}</strong>
+            <strong class="apartment-item__status">{{status}}</strong>
         </article>
     </template>
 
