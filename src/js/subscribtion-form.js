@@ -8,16 +8,16 @@ export default class SubscribtionForm {
 
     init() {
         this.form.addEventListener('submit', (e) => {
-            if (!this.isValid) {
+            if (!this.isValid()) {
                 e.preventDefault();
-                // Error
+                alert('Некорректный E-mail');
             }
         });
     }
 
     isValid() {
         const regexp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        const isValidEmail = regexp.test(emailInput.value);
+        const isValidEmail = regexp.test(this.email.value);
         return isValidEmail;
     }
 }
